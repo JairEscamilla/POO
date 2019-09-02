@@ -8,7 +8,7 @@ public class Recta{
     this.m = (y2-y1)/(x2-x1);
   }
   public void calculaB(float x, float y){
-    this.b = m*x + y;
+    this.b = y - m*x ;
   }
   public String toString(){
     return "La ecuacion de la recta es y = " +m+ "x + " + b;
@@ -29,6 +29,6 @@ public class Recta{
   }
   public double angulo(Recta r1, Recta r2){
     double x = (r2.m - r1.m)/(1+r1.m*r2.m);
-    return Math.atan(x);
+    return Math.toDegrees(Math.atan(x));
   }
 }

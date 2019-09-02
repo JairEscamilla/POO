@@ -15,7 +15,7 @@ public class testRecta{
     x1 = sc.nextFloat();
     Recta r1 = new Recta();
     r1.calculaPendiente(y2, y1, x2, x1);
-    r1.calculaB(x1, y1);
+    r1.calculaB(x2, y2);
     System.out.println(r1);
     System.out.println("La pendiente es " + r1.getPendiente());
     System.out.println("La ordenada al origen es "+ r1.getB());
@@ -39,7 +39,7 @@ public class testRecta{
     }else{
       System.out.println("No son paralelas");
       r1.interseccion(r1, r2);
-      r1.angulo(r1, r2);
+      System.out.println("Angulo: "+ r1.angulo(r1, r2));
     }
   }
 }
