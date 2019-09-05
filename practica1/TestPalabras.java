@@ -6,7 +6,7 @@ public class TestPalabras{
     public static void main(String[] args) {
         Palabras p = new Palabras();
         Scanner sc = new Scanner(System.in);
-        String pal;
+        String pal; 
         System.out.println("Ingresar un String: ");
         pal = sc.nextLine();
         System.out.println("Palabra ingresada: " + pal);
