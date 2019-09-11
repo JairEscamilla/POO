@@ -4,12 +4,12 @@ public class Integral{
   int a, b;
   double dx;
   public Integral(double dx){
-    this.a = -1;
-    this.b = 2;
+    this.a = -3;
+    this.b = 3;
     this.dx = dx;
   }
   private double f(double x){
-    return Math.pow(x, 4) + 2;
+    return x;
   }
   public double resolver(){
     double res = 0;
