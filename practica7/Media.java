@@ -13,7 +13,7 @@ public class Media{
     for(i = 0; i < arreglo.length; i++){
       counter+= arreglo[i];
     }
-    System.out.println("La media es " + (float)counter/i);
+    System.out.println("La media es " + (float)counter/arreglo.length);
   }
 
   private void ordenar(){
@@ -65,8 +65,25 @@ public class Media{
       contadorFrecuencias+= contador*arreglo2[i];
       contadorGlobal+= contador;
     }
-    System.out.println("La media aritmetica con frecuencias es " + (float)contadorFrecuencias / contadorGlobal);
+    System.out.println("La media aritmetica con frecuencias es " + (float)contadorFrecuencias / arreglo.length);
   }
 
+  public void imprimirArreglo(){
+    System.out.println("El arreglo ordenado es: ");
+    for(int i = arreglo.length - 1; i >= 0; i--){
+      System.out.println(arreglo[i]);
+    }
+  }
+
+  public void mediana(){
+    double mediana;
+    if((arreglo.length + 1) % 2 == 0){
+        mediana = arreglo[((arreglo.length+1)/2) - 1];
+        System.out.println("Aqui");
+    }else{
+      mediana = arreglo[(arreglo.length + 1) / 2] + arreglo[((arreglo.length + 1) / 2) - 1];
+    }
+    System.out.println("La mediana es "+ mediana);
+  }
 }
 // 10, 12, 3, 11, 10, 10, 5, 19, 2, 13, 12, 12, 12, 7
