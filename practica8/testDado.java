@@ -6,14 +6,14 @@ public class testDado{
     Scanner sc = new Scanner(System.in);
     int juegos = 0;
     Dado d = new Dado();
-    String opcion = "s";
+    String opcion = "si";
     do {
       d.lanzarDado();
       d.jugar();
       juegos++;
       System.out.println("Desea seguir jugando? (s/n)");
       opcion = sc.nextLine();
-    } while (opcion.equals("s") );
+    } while (opcion.equals("si") );
     d.desplegarDatos();
     System.out.println("Total de juegos: " + juegos);
   }

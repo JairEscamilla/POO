@@ -11,8 +11,11 @@ public class Dado{
     int num;
     boolean ac = true;
     do {
+      System.out.println("El numero es: " + number);
       System.out.print("Ingresar numero que piensa es correcto-> ");
       num = sc.nextInt();
+      if(num > 6 || num < 1)
+        System.out.println("Numero no valido");
       if(num == this.number){
         aciertos+= 1;
         ac = false;
