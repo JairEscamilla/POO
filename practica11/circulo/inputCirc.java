@@ -1,13 +1,13 @@
-package practica11;
+package practica11.circulo;
 import javax.swing.*;
 import java.awt.GridLayout;
 
-public class inputC extends JPanel{
+public class inputCirc extends JPanel{
   static JTextField txt1;
   static JButton btn;
-  public inputC(){
+  public inputCirc(){
     setLayout(new GridLayout(2, 1));
-    txt1 = new JTextField("Número", 3);
+    txt1 = new JTextField("Radio", 3);
     this.add(txt1);
     btn = new JButton("Volumen");
     this.add(btn);
