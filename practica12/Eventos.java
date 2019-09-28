@@ -2,6 +2,7 @@ package practica12;
 import javax.swing.*;
 import java.awt.event.*;
 
+
 public class Eventos implements ActionListener{
     public void actionPerformed(ActionEvent evento){
         if(evento.getSource() == PanelDatos.imprimir){
@@ -20,7 +21,7 @@ public class Eventos implements ActionListener{
                 JScrollPane tableContainer = new JScrollPane(PrincipalFrame.tabla);
                 PrincipalFrame.panelTable.add(tableContainer);
             }catch(Exception e){
-                System.out.println("Ha ocurrido un error");
+                JOptionPane.showMessageDialog(null, "Ha ocurrido un error", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
         if(evento.getSource() == Resultados.calc){
@@ -33,7 +34,7 @@ public class Eventos implements ActionListener{
                 media = counter / i;
                 Resultados.lbl.setText("El valor de la media es: " + media);
             }catch(Exception e){
-                System.out.println("Ha ocurrido un error):");
+                JOptionPane.showMessageDialog(null, "Ha ocurrido un error):", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
