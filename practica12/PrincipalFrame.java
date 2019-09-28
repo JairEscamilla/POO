@@ -24,5 +24,7 @@ public class PrincipalFrame extends JFrame{
         PanelDatos.imprimir.addActionListener(manejador);
         Resultados res = new Resultados();
         this.add(res);
+        Eventos manejador2 = new Eventos();
+        Resultados.calc.addActionListener(manejador2);
     }
 }

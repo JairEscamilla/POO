@@ -7,7 +7,6 @@ public class Eventos implements ActionListener{
         if(evento.getSource() == PanelDatos.imprimir){
             try{
                 int numero1 = Integer.parseInt(PanelDatos.numValores.getText().toString());
-                System.out.println(numero1);
                 PrincipalFrame.datos = new String[numero1][2];
                 for(int fila = 0; fila < PrincipalFrame.datos.length; fila++){
                     for(int col = 0; col < PrincipalFrame.datos[0].length; col++){
@@ -22,6 +21,19 @@ public class Eventos implements ActionListener{
                 PrincipalFrame.panelTable.add(tableContainer);
             }catch(Exception e){
                 System.out.println("Ha ocurrido un error");
+            }
+        }
+        if(evento.getSource() == Resultados.calc){
+            try{
+                double counter = 0, media = 0;
+                int i;
+                for(i = 0; i < PrincipalFrame.tabla.getRowCount(); i++){
+                    counter += Integer.parseInt(PrincipalFrame.tabla.getValueAt(i, 1).toString());
+                }
+                media = counter / i;
+                Resultados.lbl.setText("El valor de la media es: " + media);
+            }catch(Exception e){
+                System.out.println("Ha ocurrido un error):");
             }
         }
     }

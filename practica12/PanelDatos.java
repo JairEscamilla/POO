@@ -23,6 +23,5 @@ public class PanelDatos extends JPanel{
         imprimir = new JButton("Ingresar datos");
         imprimir.setBounds(340, 22, 150, 25);
         this.add(imprimir);
-
     }
 }
