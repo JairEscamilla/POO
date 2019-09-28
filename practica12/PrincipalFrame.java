@@ -14,7 +14,7 @@ public class PrincipalFrame extends JFrame{
         setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(true);
-        setLayout(new GridLayout(2, 1));
+        setLayout(new GridLayout(3, 1));
         PanelDatos ingD = new PanelDatos();
         this.add(ingD);
         panelTable = new JPanel();
@@ -22,5 +22,7 @@ public class PrincipalFrame extends JFrame{
         this.add(panelTable);
         Eventos manejador = new Eventos();
         PanelDatos.imprimir.addActionListener(manejador);
+        Resultados res = new Resultados();
+        this.add(res);
     }
 }
