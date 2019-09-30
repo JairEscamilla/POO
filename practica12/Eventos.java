@@ -7,6 +7,7 @@ public class Eventos implements ActionListener{
     public void actionPerformed(ActionEvent evento){
         if(evento.getSource() == PanelDatos.imprimir){
             try{
+                PrincipalFrame.panelTable.removeAll();
                 int numero1 = Integer.parseInt(PanelDatos.numValores.getText().toString());
                 PrincipalFrame.datos = new String[numero1][2];
                 for(int fila = 0; fila < PrincipalFrame.datos.length; fila++){
