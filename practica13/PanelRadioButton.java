@@ -3,12 +3,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PanelRadioButton extends JPanel{
-    static JRadioButton ninguna, media, mucha;
+    public static JRadioButton ninguna, media, mucha;
     public PanelRadioButton(){
         setLayout(new GridLayout(1, 3));
-        ninguna = new JRadioButton("Ninguna");
-        media = new JRadioButton("Media");
-        mucha = new JRadioButton("Mucha");
+        ninguna = new JRadioButton("Integral");
+        media = new JRadioButton("Evaluar");
+        mucha = new JRadioButton("T. evaluacion");
         // Esto es para seleccionar solamente un boton a la vez
         ButtonGroup grupo1 = new ButtonGroup();
         grupo1.add(ninguna);
@@ -18,7 +18,7 @@ public class PanelRadioButton extends JPanel{
         this.add(media);
         this.add(mucha);
 
-        setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Dificultad para respirar"));
+        setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Seleccione alguna opcion: "));
         
     }
-}
+}   

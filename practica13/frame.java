@@ -7,7 +7,7 @@ public class frame extends JFrame{
         super("Diagnostico");
         setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(true);
+        thissetResizable(false)
         setLayout(new GridLayout(2, 4));
         CheckBuit cb = new CheckBuit();
         this.add(cb);
