@@ -3,7 +3,7 @@ package practica14;
 import javax.swing.JFrame;
 import javax.swing.JTable;
 import javax.swing.JLabel;
-import java.awt.*;
+import javax.swing.JScrollPane;
 
 public class FrameTabla extends JFrame {
     public FrameTabla(int x[], int li){
@@ -20,9 +20,8 @@ public class FrameTabla extends JFrame {
         for(int i = 0; i < x.length; i++){
             datos[i][1] = String.valueOf(x[i]);
         }
-        JLabel lbl = new JLabel("Resultados de evaluación");
-        this.add(lbl);
         JTable tabla = new JTable(datos, columnas);
-        this.add(tabla);
+        JScrollPane tableContainer = new JScrollPane(tabla);
+        this.add(tableContainer);
     }
 }
