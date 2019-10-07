@@ -40,7 +40,7 @@ public class Eventos implements ActionListener{
                     array[counter] = a * i * i + b * i + c;
                     counter++;
                 }
-                FrameTabla ft = new FrameTabla(array);
+                FrameTabla ft = new FrameTabla(array, li);
                 ft.setVisible(true);
             }
         }catch(Exception e){
