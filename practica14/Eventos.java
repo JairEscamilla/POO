@@ -31,8 +31,21 @@ public class Eventos implements ActionListener{
                 int result = a*value*value + b*value + c;
                 JOptionPane.showMessageDialog(null, "El resultado de la evaluación es " + result, "Resultado evaluación", JOptionPane.INFORMATION_MESSAGE);
             }
+            if(evento.getSource() == practica13.PanelRadioButton.mucha){
+                int li = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresar el limite inferior:"));
+                int ls = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresar el limite superior:"));
+                int array[] = new int[ls - li + 1];
+                int counter = 0;
+                for(int i = li; i <= ls; i++){
+                    array[counter] = a * i * i + b * i + c;
+                    counter++;
+                }
+                FrameTabla ft = new FrameTabla(array);
+                ft.setVisible(true);
+            }
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "Ha introducido mal los datos", "error", JOptionPane.ERROR_MESSAGE);
+            System.out.println(e);
         }
     }
 }
