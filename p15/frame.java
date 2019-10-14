@@ -6,6 +6,6 @@ public class frame extends JFrame{
         super("Formulario de registro");
         setSize(800, 900);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(false);
+        setResizable(false);        
     }
 }
