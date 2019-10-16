@@ -4,7 +4,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class frame extends JFrame{
-    public static JTextField apPat, apMat, nomMedico, dd, mm, aa;
+    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac;
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -12,6 +12,7 @@ public class frame extends JFrame{
         setResizable(false);  
         setLayout(null);   
         datosEncuestador();
+        CedulaPaciente();
     }
     private  void datosEncuestador(){
         JLabel nombre, medico, date, s1, s2;
@@ -54,5 +55,16 @@ public class frame extends JFrame{
         aa = new JTextField("aa", 1);
         aa.setBounds(1005, 65, 30, 20);
         this.add(aa);
+    }
+    private void CedulaPaciente(){
+        JLabel superior, nombre;
+        superior = new JLabel("B. CÉDULA DE IDENTIFICACIÓN DEL PACIENTE");
+        superior.setFont(new java.awt.Font("Umpush Regular", 1, 20));
+        superior.setBounds(10, 100, 600, 50);
+        this.add(superior);
+        nombre = new JLabel("Nombre del paciente:");
+        nombre.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        nombre.setBounds(10, 160, 400, 20);
+        this.add(nombre);
     }
 }   
