@@ -16,6 +16,7 @@ public class frame extends JFrame{
         setLayout(null);   
         datosEncuestador();
         CedulaPaciente();
+        mas_datos();
     }
     private  void datosEncuestador(){
         JLabel nombre, medico, date, s1, s2;
@@ -92,7 +93,14 @@ public class frame extends JFrame{
         this.add(r1);
         this.add(r2);
         edad = new JTextField("Edad");
-        edad.setBounds(880, 160, 130 , 20);
+        edad.setBounds(900, 160, 130 , 20);
         this.add(edad);
+    }
+    private void mas_datos(){
+        JLabel fecnac;
+        fecnac = new JLabel("Fecha de nacimiento: ");
+        fecnac.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        fecnac.setBounds(10, 200, 180, 20);
+        this.add(fecnac);
     }
 }   
