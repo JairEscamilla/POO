@@ -6,7 +6,7 @@ import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
 
 public class frame extends JFrame{
-    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad;
+    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion;
     public static JRadioButton r1, r2;
     public frame(){
         super("Formulario de registro");
@@ -97,10 +97,49 @@ public class frame extends JFrame{
         this.add(edad);
     }
     private void mas_datos(){
-        JLabel fecnac;
+        JLabel fecnac, s1, s2, direccion;
         fecnac = new JLabel("Fecha de nacimiento: ");
         fecnac.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         fecnac.setBounds(10, 200, 180, 20);
         this.add(fecnac);
+        ddP = new JTextField("dd", 1);
+        ddP.setBounds(200, 200, 30, 20);
+        this.add(ddP);
+        s1 = new JLabel("/");
+        s1.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        s1.setBounds(233, 199, 30, 20);
+        this.add(s1);
+        mmP = new JTextField("mm", 1);
+        mmP.setBounds(245, 200, 30, 20);
+        this.add(mmP);
+        s2 = new JLabel("/");
+        s2.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        s2.setBounds(280, 199, 30, 20);
+        this.add(s2);
+        aaP = new JTextField("aa", 1);
+        aaP.setBounds(295, 200, 30, 20);
+        this.add(aaP);
+        direccion = new JLabel("Direccion: ");
+        direccion.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        direccion.setBounds(343, 199, 130, 20);
+        this.add(direccion);
+        calle = new JTextField("Calle", 2);
+        calle.setBounds(430, 199, 80, 20);
+        this.add(calle);
+        numEx = new JTextField("Num. Ext", 2);
+        numEx.setBounds(520, 199, 60, 20);
+        this.add(numEx);
+        numInt = new JTextField("Num. Int", 2);
+        numInt.setBounds(590, 199, 60, 20);
+        this.add(numInt);
+        cp = new JTextField("C. P", 2);
+        cp.setBounds(660, 199, 30, 20);
+        this.add(cp);
+        zona = new JTextField("Zona", 2);
+        zona.setBounds(700, 199, 60, 20);
+        this.add(zona);
+        delegacion = new JTextField("Delegación/Municipio", 2);
+        delegacion.setBounds(770, 199, 80, 20);
+        this.add(delegacion);
     }
 }   
