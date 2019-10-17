@@ -1,10 +1,13 @@
 package p15;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+import javax.swing.ButtonGroup;
 
 public class frame extends JFrame{
-    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac;
+    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad;
+    public static JRadioButton r1, r2;
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -57,7 +60,7 @@ public class frame extends JFrame{
         this.add(aa);
     }
     private void CedulaPaciente(){
-        JLabel superior, nombre;
+        JLabel superior, nombre, sexo;
         superior = new JLabel("B. CÉDULA DE IDENTIFICACIÓN DEL PACIENTE");
         superior.setFont(new java.awt.Font("Umpush Regular", 1, 20));
         superior.setBounds(10, 100, 600, 50);
@@ -66,5 +69,30 @@ public class frame extends JFrame{
         nombre.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         nombre.setBounds(10, 160, 400, 20);
         this.add(nombre);
+        apPatPac = new JTextField("Apellido paterno");
+        apPatPac.setBounds(200, 162, 130, 20);
+        this.add(apPatPac);
+        apMatPac = new JTextField("Apellido materno");
+        apMatPac.setBounds(345, 162, 130, 20);
+        this.add(apMatPac);
+        nomPac = new JTextField("Nombre(s)");
+        nomPac.setBounds(490, 162, 130, 20);
+        this.add(nomPac);
+        sexo = new JLabel("Sexo: ");
+        sexo.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        sexo.setBounds(640, 160, 130, 20);
+        this.add(sexo);
+        r1 = new JRadioButton("Hombre");
+        r2 = new JRadioButton("Mujer");
+        ButtonGroup g1 = new ButtonGroup();
+        g1.add(r1);
+        g1.add(r2);
+        r1.setBounds(700, 160, 100, 20);
+        r2.setBounds(800, 160, 100, 20);
+        this.add(r1);
+        this.add(r2);
+        edad = new JTextField("Edad");
+        edad.setBounds(880, 160, 130 , 20);
+        this.add(edad);
     }
 }   
