@@ -6,7 +6,7 @@ import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
 
 public class frame extends JFrame{
-    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion;
+    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time;
     public static JRadioButton r1, r2;
     public frame(){
         super("Formulario de registro");
@@ -17,6 +17,7 @@ public class frame extends JFrame{
         datosEncuestador();
         CedulaPaciente();
         mas_datos();
+        more_data();
     }
     private  void datosEncuestador(){
         JLabel nombre, medico, date, s1, s2;
@@ -97,7 +98,7 @@ public class frame extends JFrame{
         this.add(edad);
     }
     private void mas_datos(){
-        JLabel fecnac, s1, s2, direccion;
+        JLabel fecnac, s1, s2, direccion, telF;
         fecnac = new JLabel("Fecha de nacimiento: ");
         fecnac.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         fecnac.setBounds(10, 200, 180, 20);
@@ -139,7 +140,31 @@ public class frame extends JFrame{
         zona.setBounds(700, 199, 60, 20);
         this.add(zona);
         delegacion = new JTextField("Delegación/Municipio", 2);
-        delegacion.setBounds(770, 199, 80, 20);
+        delegacion.setBounds(770, 199, 120, 20);
         this.add(delegacion);
+        telF = new JLabel("Tel. fijo: ");
+        telF.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        telF.setBounds(10, 240, 120, 20);
+        this.add(telF);
+    }
+    private void more_data(){
+        JLabel telM, tiempo;
+        telFijo = new JTextField("Teléfono fijo", 3);
+        telFijo.setBounds(86, 240, 120, 20);
+        this.add(telFijo);
+        telM = new JLabel("Teléfono móvil: ");
+        telM.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        telM.setBounds(220, 240, 140, 20);
+        this.add(telM);
+        telMovil = new JTextField("Teléfono móvil", 3);
+        telMovil.setBounds(360, 240, 140, 20);
+        this.add(telMovil);
+        tiempo = new JLabel("¿Cuánto tiempo lleva viviendo en este domicilio?");
+        tiempo.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        tiempo.setBounds(520, 240, 480, 20);
+        this.add(tiempo);
+        time = new JTextField("tiempo", 2);
+        time.setBounds(950, 240, 80, 20);
+        this.add(time);
     }
 }   
