@@ -8,7 +8,7 @@ import javax.swing.ButtonGroup;
 public class frame extends JFrame{
     public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time, estadoPac;
     public static JRadioButton r1, r2, casado, ulibre, soltero, separado, divorciado, viudo, nsabe, noEst, p1, p2, p3, p4, p5, p6, s7, s8, s9, pt10, pt11, pt12, lic13, lic14, lic15, lic17, lic18, pos19, pos20, pos21, pos23, pos24, pos25;
-    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3];
+    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3];
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -218,7 +218,7 @@ public class frame extends JFrame{
         this.add(nsabe);
     }
     private void nivelEstudios(){
-        JLabel pregunta, ne, prim, sec;
+        JLabel pregunta, ne, prim, sec, prep;
         pregunta = new JLabel("¿Qué nivel de estudios tiene?");
         pregunta.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         pregunta.setBounds(10, 370, 300, 20);
@@ -234,12 +234,6 @@ public class frame extends JFrame{
         prim.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         prim.setBounds(210, 400, 300, 20);
         this.add(prim);
-        /*p1 = new JRadioButton("1");
-        p1.setBounds(360, 400, 50, 20);
-        this.add(p1);
-        p2 = new JRadioButton("2");
-        p2.setBounds(410, 400, 50, 20);
-        this.add(p2);*/
         for(int i = 0; i < 6; i++){
             primaria[i] = new  JRadioButton(Integer.toString(i + 1));
             primaria[i].setBounds(370+i*80, 400, 50, 20);
@@ -250,9 +244,18 @@ public class frame extends JFrame{
         sec.setBounds(50, 450, 300, 20);
         this.add(sec);
         for(int i = 0; i < 3; i++){
-            secundaria[i] = new JRadioButton(Integer.toString(i + 1));
-            secundaria[i].setBounds(300+i*80, 450, 50, 20);
+            secundaria[i] = new JRadioButton(Integer.toString(i + 7));
+            secundaria[i].setBounds(250+i*80, 450, 50, 20);
             this.add(secundaria[i]);
+        }
+        prep = new JLabel("Preparatoria en años: ");
+        prep.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        prep.setBounds(480, 450, 300, 20);
+        this.add(prep);
+        for(int i = 0; i < 3; i++){
+            prepa[i] = new JRadioButton(Integer.toString(i + 10));
+            prepa[i].setBounds(680+i*80, 450, 50, 20);
+            this.add(prepa[i]);
         }
     }
 }   
