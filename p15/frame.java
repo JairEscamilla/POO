@@ -6,8 +6,9 @@ import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
 
 public class frame extends JFrame{
-    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time;
-    public static JRadioButton r1, r2;
+    public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time, estadoPac;
+    public static JRadioButton r1, r2, casado, ulibre, soltero, separado, divorciado, viudo, nsabe, noEst, p1, p2, p3, p4, p5, p6, s7, s8, s9, pt10, pt11, pt12, lic13, lic14, lic15, lic17, lic18, pos19, pos20, pos21, pos23, pos24, pos25;
+    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3];
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -18,6 +19,9 @@ public class frame extends JFrame{
         CedulaPaciente();
         mas_datos();
         more_data();
+        estPac();
+        estadoCivil();
+        nivelEstudios();
     }
     private  void datosEncuestador(){
         JLabel nombre, medico, date, s1, s2;
@@ -166,5 +170,89 @@ public class frame extends JFrame{
         time = new JTextField("tiempo", 2);
         time.setBounds(950, 240, 80, 20);
         this.add(time);
+    }
+    private void estPac(){
+        JLabel estadoP;
+        estadoP = new JLabel("Estado o entidad federativa de origen: ");
+        estadoP.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        estadoP.setBounds(10, 280, 390, 20);
+        this.add(estadoP);
+        estadoPac = new JTextField("Estado de origen", 3);
+        estadoPac.setBounds(350, 280, 150, 20);
+        this.add(estadoPac);
+    }
+    private void estadoCivil(){
+        JLabel est = new JLabel("Estado civil: ");
+        ButtonGroup g1;
+        est.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        est.setBounds(10, 320, 130, 20);
+        this.add(est);
+        casado = new JRadioButton("Casado");
+        ulibre = new JRadioButton("Unión libre");
+        soltero = new JRadioButton("Soltero");
+        separado = new JRadioButton("Separado");
+        divorciado = new JRadioButton("Divorciado");
+        viudo = new JRadioButton("Viudo");
+        nsabe = new JRadioButton("No sabe/ No responde");
+        g1 = new ButtonGroup();
+        g1.add(casado);
+        g1.add(ulibre);
+        g1.add(soltero);
+        g1.add(separado);
+        g1.add(divorciado);
+        g1.add(viudo);
+        g1.add(nsabe);
+        casado.setBounds(130, 320, 80, 20);
+        this.add(casado);
+        soltero.setBounds(210, 320, 80, 20);
+        this.add(soltero);
+        ulibre.setBounds(290, 320, 110, 20);
+        this.add(ulibre);
+        separado.setBounds(400, 320, 100, 20);
+        this.add(separado);
+        divorciado.setBounds(500, 320, 100, 20);
+        this.add(divorciado);
+        viudo.setBounds(320, 320, 100, 20);
+        this.add(viudo);
+        nsabe.setBounds(610, 320, 300, 20);
+        this.add(nsabe);
+    }
+    private void nivelEstudios(){
+        JLabel pregunta, ne, prim, sec;
+        pregunta = new JLabel("¿Qué nivel de estudios tiene?");
+        pregunta.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        pregunta.setBounds(10, 370, 300, 20);
+        this.add(pregunta);
+        ne = new JLabel("No estudió: ");
+        ne.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        ne.setBounds(50, 400, 300, 20);
+        this.add(ne);
+        noEst = new JRadioButton("0");
+        noEst.setBounds(150, 400, 60, 20);
+        this.add(noEst);
+        prim = new JLabel("Primaria en años: ");
+        prim.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        prim.setBounds(210, 400, 300, 20);
+        this.add(prim);
+        /*p1 = new JRadioButton("1");
+        p1.setBounds(360, 400, 50, 20);
+        this.add(p1);
+        p2 = new JRadioButton("2");
+        p2.setBounds(410, 400, 50, 20);
+        this.add(p2);*/
+        for(int i = 0; i < 6; i++){
+            primaria[i] = new  JRadioButton(Integer.toString(i + 1));
+            primaria[i].setBounds(370+i*80, 400, 50, 20);
+            this.add(primaria[i]);
+        }
+        sec = new JLabel("Secundaria en años: ");
+        sec.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        sec.setBounds(50, 450, 300, 20);
+        this.add(sec);
+        for(int i = 0; i < 3; i++){
+            secundaria[i] = new JRadioButton(Integer.toString(i + 1));
+            secundaria[i].setBounds(300+i*80, 450, 50, 20);
+            this.add(secundaria[i]);
+        }
     }
 }   
