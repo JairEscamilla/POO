@@ -8,7 +8,7 @@ import javax.swing.ButtonGroup;
 public class frame extends JFrame{
     public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time, estadoPac;
     public static JRadioButton r1, r2, casado, ulibre, soltero, separado, divorciado, viudo, nsabe, noEst;
-    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3], licenciatura[] = new JRadioButton[6], postgrado[] = new JRadioButton[7], ly, ln;
+    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3], licenciatura[] = new JRadioButton[6], postgrado[] = new JRadioButton[7], ly, ln, ey, en, ocupacion[] = new JRadioButton[6];
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -23,6 +23,8 @@ public class frame extends JFrame{
         estadoCivil();
         nivelEstudios();
         lectesc();
+        ocupacion();
+        religion();
     }
     private  void datosEncuestador(){
         JLabel nombre, medico, date, s1, s2;
@@ -285,8 +287,9 @@ public class frame extends JFrame{
         }
     }
     private void lectesc(){
-        JLabel leer;
+        JLabel leer, escribir;
         ButtonGroup g1 = new ButtonGroup();
+        ButtonGroup g2 = new ButtonGroup();
         leer = new JLabel("¿Sabe leer?");
         leer.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         leer.setBounds(500, 480, 100, 20);
@@ -299,5 +302,34 @@ public class frame extends JFrame{
         ln.setBounds(660, 480, 50, 20);
         this.add(ly);
         this.add(ln);
+        escribir = new JLabel("¿Sabe escribir?");
+        escribir.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        escribir.setBounds(720, 480, 200, 20);
+        this.add(escribir);
+        ey = new JRadioButton("Si");
+        en = new JRadioButton("No");
+        g2.add(ey);
+        g2.add(en);
+        ey.setBounds(870, 480, 50, 20);
+        en.setBounds(920, 480, 50, 20);
+        this.add(ey);
+        this.add(en);
+    }
+    private void ocupacion(){
+        JLabel oc = new JLabel("Ocupación actual: ");
+        ButtonGroup g1 = new ButtonGroup();
+        String titles[] = {"0. Desempleado.", "1. Jubilado(a) s/p.", "2. Jubilado(a) c/p", "3. Freelancer.", "4. Patrón(a).", "5. Ama de casa"};
+        oc.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        oc.setBounds(10, 520, 300, 20);
+        this.add(oc);
+        for(int i = 0; i < 6; i++){
+            ocupacion[i] = new  JRadioButton(titles[i]);
+            ocupacion[i].setBounds(180+i*150, 520, 150, 20);
+            g1.add(ocupacion[i]);
+            this.add(ocupacion[i]);
+        }
+    }
+    private void religion(){
+        
     }
 }   
