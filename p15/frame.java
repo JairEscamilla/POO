@@ -4,11 +4,14 @@ import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.ImageIcon;
 
 public class frame extends JFrame{
     public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time, estadoPac;
     public static JRadioButton r1, r2, casado, ulibre, soltero, separado, divorciado, viudo, nsabe, noEst;
     public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3], licenciatura[] = new JRadioButton[6], postgrado[] = new JRadioButton[7], ly, ln, ey, en, ocupacion[] = new JRadioButton[6], rels[] = new JRadioButton[4];
+    public static JButton registro;
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -25,6 +28,11 @@ public class frame extends JFrame{
         lectesc();
         ocupacion();
         religion();
+        registro =  new JButton("Hola");
+        ImageIcon icono = new ImageIcon("botonregistro.png");
+        registro.setIcon(icono);    
+        registro.setBounds(700, 560, 200, 20);
+        this.add(registro);
     }
     private  void datosEncuestador(){
         JLabel nombre, medico, date, s1, s2;
