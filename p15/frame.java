@@ -8,7 +8,7 @@ import javax.swing.ButtonGroup;
 public class frame extends JFrame{
     public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time, estadoPac;
     public static JRadioButton r1, r2, casado, ulibre, soltero, separado, divorciado, viudo, nsabe, noEst;
-    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3], licenciatura[] = new JRadioButton[6], postgrado[] = new JRadioButton[7], ly, ln, ey, en, ocupacion[] = new JRadioButton[6];
+    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3], licenciatura[] = new JRadioButton[6], postgrado[] = new JRadioButton[7], ly, ln, ey, en, ocupacion[] = new JRadioButton[6], rels[] = new JRadioButton[4];
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -330,6 +330,17 @@ public class frame extends JFrame{
         }
     }
     private void religion(){
-        
+        JLabel lbl = new JLabel("Religión: ");
+        String religiones[] = {"0. Ninguna.", "1. Católica.", "2. Cristiana.", "3. Judio."};
+        ButtonGroup g1 = new ButtonGroup();
+        lbl.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        lbl.setBounds(10, 560, 100, 20);
+        this.add(lbl);
+        for(int i = 0; i < 4; i++){
+            rels[i] = new  JRadioButton(religiones[i]);
+            rels[i].setBounds(100+i*150, 560, 150, 20);
+            g1.add(rels[i]);
+            this.add(rels[i]);
+        }
     }
 }   
