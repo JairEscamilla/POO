@@ -225,36 +225,36 @@ public class frame extends JFrame{
         this.add(pregunta);
         ne = new JLabel("No estudió: ");
         ne.setFont(new java.awt.Font("Umpush Regular", 1, 15));
-        ne.setBounds(50, 400, 300, 20);
+        ne.setBounds(10, 400, 300, 20);
         this.add(ne);
         noEst = new JRadioButton("0");
-        noEst.setBounds(150, 400, 60, 20);
+        noEst.setBounds(120, 400, 50, 20);
         this.add(noEst);
         prim = new JLabel("Primaria en años: ");
         prim.setFont(new java.awt.Font("Umpush Regular", 1, 15));
-        prim.setBounds(210, 400, 300, 20);
+        prim.setBounds(170, 400, 300, 20);
         this.add(prim);
         for(int i = 0; i < 6; i++){
             primaria[i] = new  JRadioButton(Integer.toString(i + 1));
-            primaria[i].setBounds(370+i*80, 400, 50, 20);
+            primaria[i].setBounds(330+i*50, 400, 50, 20);
             this.add(primaria[i]);
         }
         sec = new JLabel("Secundaria en años: ");
         sec.setFont(new java.awt.Font("Umpush Regular", 1, 15));
-        sec.setBounds(50, 450, 300, 20);
+        sec.setBounds(630, 400, 300, 20);
         this.add(sec);
         for(int i = 0; i < 3; i++){
             secundaria[i] = new JRadioButton(Integer.toString(i + 7));
-            secundaria[i].setBounds(250+i*80, 450, 50, 20);
+            secundaria[i].setBounds(820+i*50, 400, 50, 20);
             this.add(secundaria[i]);
         }
         prep = new JLabel("Preparatoria en años: ");
         prep.setFont(new java.awt.Font("Umpush Regular", 1, 15));
-        prep.setBounds(480, 450, 300, 20);
+        prep.setBounds(10, 440, 300, 20);
         this.add(prep);
         for(int i = 0; i < 3; i++){
             prepa[i] = new JRadioButton(Integer.toString(i + 10));
-            prepa[i].setBounds(680+i*80, 450, 50, 20);
+            prepa[i].setBounds(200+i*50, 440, 50, 20);
             this.add(prepa[i]);
         }
     }
