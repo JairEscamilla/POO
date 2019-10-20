@@ -7,8 +7,8 @@ import javax.swing.ButtonGroup;
 
 public class frame extends JFrame{
     public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time, estadoPac;
-    public static JRadioButton r1, r2, casado, ulibre, soltero, separado, divorciado, viudo, nsabe, noEst, p1, p2, p3, p4, p5, p6, s7, s8, s9, pt10, pt11, pt12, lic13, lic14, lic15, lic17, lic18, pos19, pos20, pos21, pos23, pos24, pos25;
-    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3], licenciatura[] = new JRadioButton[6], postgrado[] = new JRadioButton[7];
+    public static JRadioButton r1, r2, casado, ulibre, soltero, separado, divorciado, viudo, nsabe, noEst;
+    public static JRadioButton primaria[] = new JRadioButton[6], secundaria[] = new JRadioButton[3], prepa[] = new JRadioButton[3], licenciatura[] = new JRadioButton[6], postgrado[] = new JRadioButton[7], ly, ln;
     public frame(){
         super("Formulario de registro");
         setSize(1100, 900);
@@ -22,6 +22,7 @@ public class frame extends JFrame{
         estPac();
         estadoCivil();
         nivelEstudios();
+        lectesc();
     }
     private  void datosEncuestador(){
         JLabel nombre, medico, date, s1, s2;
@@ -282,5 +283,21 @@ public class frame extends JFrame{
             g1.add(postgrado[i]);
             this.add(postgrado[i]);
         }
+    }
+    private void lectesc(){
+        JLabel leer;
+        ButtonGroup g1 = new ButtonGroup();
+        leer = new JLabel("¿Sabe leer?");
+        leer.setFont(new java.awt.Font("Umpush Regular", 1, 15));
+        leer.setBounds(500, 480, 100, 20);
+        this.add(leer);
+        ly = new JRadioButton("Si");
+        ln = new JRadioButton("No");
+        g1.add(ly);
+        g1.add(ln);
+        ly.setBounds(610, 480, 50, 20);
+        ln.setBounds(660, 480, 50, 20);
+        this.add(ly);
+        this.add(ln);
     }
 }   
