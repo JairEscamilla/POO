@@ -35,6 +35,8 @@ public class frame extends JFrame{
         registro =  new JButton();
         registro.setBounds(830, 560, 200, 51);
         registro.setIcon(new ImageIcon(getClass().getResource("boton-registro.png")));
+        Eventos manejador = new Eventos();
+        registro.addActionListener(manejador);
         this.add(registro);
     }
     private  void datosEncuestador(){
