@@ -3,9 +3,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+
+import java.awt.Image;
+import java.awt.Color;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
+import javax.swing.Icon;
 
 public class frame extends JFrame{
     public static JTextField apPat, apMat, nomMedico, dd, mm, aa, apPatPac, apMatPac, nomPac, edad, ddP, mmP, aaP, calle, numEx, numInt, cp, zona, delegacion, telFijo, telMovil, time, estadoPac;
@@ -14,7 +18,7 @@ public class frame extends JFrame{
     public static JButton registro;
     public frame(){
         super("Formulario de registro");
-        setSize(1100, 900);
+        setSize(1080, 650);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);  
         setLayout(null);   
@@ -28,10 +32,9 @@ public class frame extends JFrame{
         lectesc();
         ocupacion();
         religion();
-        registro =  new JButton("Hola");
-        ImageIcon icono = new ImageIcon("botonregistro.png");
-        registro.setIcon(icono);    
-        registro.setBounds(700, 560, 200, 20);
+        registro =  new JButton();
+        registro.setBounds(830, 560, 200, 51);
+        registro.setIcon(new ImageIcon(getClass().getResource("boton-registro.png")));
         this.add(registro);
     }
     private  void datosEncuestador(){
