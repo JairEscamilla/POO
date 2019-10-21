@@ -2,15 +2,19 @@ package p15;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
 public class Eventos implements ActionListener{
+    public ArrayList<Paciente> lista = new ArrayList<>();
     public void actionPerformed(ActionEvent action){
         if(action.getSource() == frame.registro){
+            System.out.print("\033[H\033[2J");  
+            System.out.flush(); 
             try {
                 boolean errores[] = new boolean[8];
                 String validaciones[] = {"Ha ingresado mal el apellido materno del médico", "Ha ingresado mal el apellido paterno del médico", "Ha ingresado mal el nombre del médico", "Ha ingresado mal el apellido materno del paciente", "Ha ingresado mal el apellido paterno del paciente", "Ha ingresado mal el nombre del paciente", "Ha ingresado mal la delegacion del paciente", "Ha ingresado mal el estado del paciente"};
                 String apMat, apPat, nom, apPatPac, apMatPac, nomPac, calle, delegacion, estadoPac;
-                int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo, estadoCivil, estudios, counter = 0, leer, escribir, ocupacion, counter2 = 0, religion, counter3 = 0;
+                int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo = 0, estadoCivil = 0, estudios = 0, counter = 0, leer = 0, escribir = 0, ocupacion = 0, counter2 = 0, religion, counter3 = 0;
                 apMat = frame.apMat.getText().toString();
                 apPat = frame.apPat.getText().toString();
                 nom = frame.nomMedico.getText().toString();
@@ -68,25 +72,21 @@ public class Eventos implements ActionListener{
                         estudios = counter;
                     counter++;
                 }
-                counter++;
                 for(int i = 0; i < 3; i++){
                     if(frame.primaria[i].isSelected())
                         estudios = counter;
                     counter++;
                 }
-                counter++;
                 for(int i = 0; i < 3; i++){
                     if(frame.prepa[i].isSelected())
                         estudios = counter;
                     counter++;
                 }
-                counter++;
                 for(int i = 0; i < 6; i++){
                     if(frame.licenciatura[i].isSelected())
                         estudios = counter;
                     counter++;
                 }
-                counter++;
                 for(int i = 0; i < 6; i++){
                     if(frame.postgrado[i].isSelected())
                         estudios = counter;
@@ -115,8 +115,12 @@ public class Eventos implements ActionListener{
                     if(!errores[i])
                         e = true;
                 }
-                if(e)
-                    System.out.println("Aqui va la coleccion");
+                if(e){
+                    lista.add(new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion));
+                    for(Paciente iterador: lista)
+                        System.out.println(iterador);
+                    JOptionPane.showMessageDialog(null, "Se ha hecho el registro de manera correcta", "REGISTRO", JOptionPane.INFORMATION_MESSAGE);
+                }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Ha introducido mal alguno de sus datos", "ERROR", JOptionPane.ERROR_MESSAGE);
             }
