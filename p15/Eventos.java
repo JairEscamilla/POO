@@ -1,11 +1,13 @@
 package p15;
 import java.awt.event.ActionListener;
+import java.io.PrintWriter;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
 public class Eventos implements ActionListener{
     public ArrayList<Paciente> lista = new ArrayList<>();
+    PrintWriter pw;
     public void actionPerformed(ActionEvent action){
         if(action.getSource() == frame.registro){
             System.out.print("\033[H\033[2J");  
@@ -19,6 +21,7 @@ public class Eventos implements ActionListener{
                 apPat = frame.apPat.getText().toString();
                 nom = frame.nomMedico.getText().toString();
                 errores[0] = validaCaracteres(apMat);
+                System.out.println(errores[0]);
                 errores[1] = validaCaracteres(apPat);
                 errores[2] = validaCaracteres(nom);
                 dd = Integer.parseInt(frame.dd.getText().toString());
@@ -112,14 +115,23 @@ public class Eventos implements ActionListener{
                 }
                 boolean e = false;
                 for(int i = 0; i < errores.length; i++){
-                    if(!errores[i])
+                    if(errores[i])
                         e = true;
+                    System.out.println("Errores: " + errores[i]);
                 }
-                if(e){
+                System.out.println(e);
+                if(!e){
+                    pw = new PrintWriter("datos.txt");
                     lista.add(new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion));
-                    for(Paciente iterador: lista)
-                        System.out.println(iterador);
+                    for(Paciente iterador: lista){
+                        //System.out.println(iterador);
+                        pw.println(iterador.toString());
+                    }
+                    pw.close();
+                        
                     JOptionPane.showMessageDialog(null, "Se ha hecho el registro de manera correcta", "REGISTRO", JOptionPane.INFORMATION_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(null, "Ha ingresado mal alguno de sus datos que solo pueden tener caracteres", "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Ha introducido mal alguno de sus datos", "ERROR", JOptionPane.ERROR_MESSAGE);
@@ -130,12 +142,12 @@ public class Eventos implements ActionListener{
         boolean error = false;
         for(int i = 0; i < cadena.length(); i++){
             if(((int)cadena.charAt(i) >= 65 && (int)cadena.charAt(i) <= 90) || ((int)cadena.charAt(i) >= 97 && (int)cadena.charAt(i) <= 122)){
-
                 error = false;
+                System.out.println("entrando");
             }
             else{
-
                 error =  true;
+                break;
             } 
         }
         return error;
