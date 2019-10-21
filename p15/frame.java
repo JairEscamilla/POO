@@ -61,25 +61,25 @@ public class frame extends JFrame{
         date = new JLabel("Fecha de evaluación: ");
         date.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         date.setBounds(730, 50, 600, 50);
-        this.add(date);
+        // this.add(date);
         dd = new JTextField("dd", 1);
         dd.setBounds(910, 65, 30, 20);
-        this.add(dd);
+        //this.add(dd);
         s1 = new JLabel("/");
         s1.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         s1.setBounds(943, 63, 50, 20);
-        this.add(s1);
+        //this.add(s1);
 
         mm = new JTextField("mm", 1);
         mm.setBounds(955, 65, 30, 20);
-        this.add(mm);
+        //this.add(mm);
         s2 = new JLabel("/");
         s2.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         s2.setBounds(990, 63, 50, 20);
-        this.add(s2);
+        //this.add(s2);
         aa = new JTextField("aa", 1);
         aa.setBounds(1005, 65, 30, 20);
-        this.add(aa);
+        //this.add(aa);
     }
     private void CedulaPaciente(){
         JLabel superior, nombre, sexo;
@@ -115,7 +115,7 @@ public class frame extends JFrame{
         this.add(r2);
         edad = new JTextField("Edad");
         edad.setBounds(900, 160, 130 , 20);
-        this.add(edad);
+        //this.add(edad);
     }
     private void mas_datos(){
         JLabel fecnac, s1, s2, direccion, telF;

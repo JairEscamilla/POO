@@ -1,63 +1,24 @@
-qwe qwe qwe
-Telefono fijo: 555
-Telefono movil: 555
+asd Escamilla Hernandez
+Telefono fijo: 55
+Telefono movil: 55
 Sexo: 0
 Estudios: 0
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 4
------------------------------------------------
-qwe qwe q
-Telefono fijo: 555
-Telefono movil: 555
-Sexo: 0
-Estudios: 0
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 4
------------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 555
-Telefono movil: 555
-Sexo: 0
-Estudios: 0
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 4
------------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 555
-Telefono movil: 555
-Sexo: 0
-Estudios: 0
-¿Sabe leer? 1
+¿Sabe leer? 0
 ¿Sabe escribir? 0
 Ocupacion: 3
+Edad: 79
+Fecha de consulta: 21/9/2019
+
 -----------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 555
-Telefono movil: 555
+asd Escamilla Hernandez
+Telefono fijo: 55
+Telefono movil: 55
 Sexo: 0
 Estudios: 0
-¿Sabe leer? 1
+¿Sabe leer? 0
 ¿Sabe escribir? 0
 Ocupacion: 3
------------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 555
-Telefono movil: 555
-Sexo: 0
-Estudios: 0
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 0
------------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 555
-Telefono movil: 555
-Sexo: 0
-Estudios: 0
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 0
+Edad: 79
+Fecha de consulta: 21/9/2019
+
 -----------------------------------------------

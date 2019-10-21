@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class Eventos implements ActionListener{
     public ArrayList<Paciente> lista = new ArrayList<>();
@@ -13,6 +15,8 @@ public class Eventos implements ActionListener{
             System.out.print("\033[H\033[2J");  
             System.out.flush(); 
             try {
+                Calendar fecha = new GregorianCalendar();
+                int year= fecha.get(Calendar.YEAR);
                 boolean errores[] = new boolean[8];
                 String validaciones[] = {"Ha ingresado mal el apellido materno del médico", "Ha ingresado mal el apellido paterno del médico", "Ha ingresado mal el nombre del médico", "Ha ingresado mal el apellido materno del paciente", "Ha ingresado mal el apellido paterno del paciente", "Ha ingresado mal el nombre del paciente", "Ha ingresado mal la delegacion del paciente", "Ha ingresado mal el estado del paciente"};
                 String apMat, apPat, nom, apPatPac, apMatPac, nomPac, calle, delegacion, estadoPac;
@@ -24,16 +28,16 @@ public class Eventos implements ActionListener{
                 System.out.println(errores[0]);
                 errores[1] = validaCaracteres(apPat);
                 errores[2] = validaCaracteres(nom);
-                dd = Integer.parseInt(frame.dd.getText().toString());
-                mm = Integer.parseInt(frame.mm.getText().toString());
-                aa = Integer.parseInt(frame.aa.getText().toString());
+                //dd = Integer.parseInt(frame.dd.getText().toString());
+                //mm = Integer.parseInt(frame.mm.getText().toString());
+                //aa = Integer.parseInt(frame.aa.getText().toString());
                 apMatPac = frame.apMatPac.getText().toString();
                 apPatPac = frame.apPatPac.getText().toString();
                 nomPac = frame.nomPac.getText().toString();
                 errores[3] = validaCaracteres(apMatPac);
                 errores[4] = validaCaracteres(apPatPac);
                 errores[5] = validaCaracteres(nomPac);
-                edad = Integer.parseInt(frame.edad.getText().toString());
+                //edad = Integer.parseInt(frame.edad.getText().toString());
                 ddP = Integer.parseInt(frame.ddP.getText().toString());
                 mmP = Integer.parseInt(frame.mmP.getText().toString());
                 aaP = Integer.parseInt(frame.aaP.getText().toString());
@@ -119,10 +123,16 @@ public class Eventos implements ActionListener{
                         e = true;
                     System.out.println("Errores: " + errores[i]);
                 }
-                System.out.println(e);
+                if((year - aaP) < 60){
+                    JOptionPane.showMessageDialog(null, "Debes tener al menos 60 años", "REGISTRO", JOptionPane.INFORMATION_MESSAGE);
+                    return;
+                }
+                if(aaP > year){
+                    JOptionPane.showMessageDialog(null, "No se puede tener esta fecha", "REGISTRO", JOptionPane.INFORMATION_MESSAGE);
+                }
                 if(!e){
                     pw = new PrintWriter("datos.txt");
-                    lista.add(new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion));
+                    lista.add(new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha));
                     for(Paciente iterador: lista){
                         //System.out.println(iterador);
                         pw.println(iterador.toString());
@@ -135,6 +145,7 @@ public class Eventos implements ActionListener{
                 }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Ha introducido mal alguno de sus datos", "ERROR", JOptionPane.ERROR_MESSAGE);
+                System.out.println(e);
             }
         }
     }
