@@ -40,7 +40,7 @@ public class frame extends JFrame{
         this.add(registro);
     }
     private  void datosEncuestador(){
-        JLabel nombre, medico, date, s1, s2;
+        JLabel nombre, medico, date, s1, s2, lblp, lblm, lbln;
         nombre = new JLabel("A. DATOS DE IDENTIFICACIÓN DEL ENCUESTADOR");   
         nombre.setFont(new java.awt.Font("Umpush Regular", 1, 20));
         nombre.setBounds(10, 0, 600, 50);
@@ -52,6 +52,15 @@ public class frame extends JFrame{
         apPat = new JTextField("Apellido paterno", 3);
         apPat.setBounds(310, 68, 130, 20);
         this.add(apPat);
+        lblp = new JLabel("Apellido paterno");
+        lblp.setBounds(315, 50, 130, 20);
+        this.add(lblp);
+        lblm = new JLabel("Apellido materno");
+        lblm.setBounds(455, 50, 130, 20);
+        this.add(lblm);
+        lbln = new JLabel("Nombre");
+        lbln.setBounds(620, 50, 130, 20);
+        this.add(lbln);
         apMat = new JTextField("Apellido materno", 3);
         apMat.setBounds(450, 68, 130, 20);
         this.add(apMat);
@@ -82,7 +91,16 @@ public class frame extends JFrame{
         //this.add(aa);
     }
     private void CedulaPaciente(){
-        JLabel superior, nombre, sexo;
+        JLabel superior, nombre, sexo, lblp, lblm, lbln;
+        lblp = new JLabel("Apellido paterno");
+        lblp.setBounds(205, 140, 130, 20);
+        this.add(lblp);
+        lblm = new JLabel("Apellido materno");
+        lblm.setBounds(350, 140, 130, 20);
+        this.add(lblm);
+        lbln = new JLabel("Nombre");
+        lbln.setBounds(520, 140, 130, 20);
+        this.add(lbln);
         superior = new JLabel("B. CÉDULA DE IDENTIFICACIÓN DEL PACIENTE");
         superior.setFont(new java.awt.Font("Umpush Regular", 1, 20));
         superior.setBounds(10, 100, 600, 50);
@@ -118,7 +136,43 @@ public class frame extends JFrame{
         //this.add(edad);
     }
     private void mas_datos(){
-        JLabel fecnac, s1, s2, direccion, telF;
+        JLabel fecnac, s1, s2, direccion, telF, ld, lm, la, lc, lne, lni, lcp, lz, ldl, ltf, ltm, ltim;
+        ld = new JLabel("dd");
+        ld.setBounds(205, 180, 180, 20);
+        this.add(ld);
+        lm = new JLabel("mm");
+        lm.setBounds(250, 180, 180, 20);
+        this.add(lm);
+        la = new JLabel("aaaa");
+        la.setBounds(295, 180, 180, 20);
+        this.add(la);
+        lc = new JLabel("Calle");
+        lc.setBounds(450, 180, 180, 20);
+        this.add(lc);
+        lne = new JLabel("Num. Ext");
+        lne.setBounds(520, 180, 180, 20);
+        this.add(lne);
+        lni = new JLabel("Num. Int");
+        lni.setBounds(590, 180, 180, 20);
+        this.add(lni);
+        lcp = new JLabel("C. P");
+        lcp.setBounds(660, 180, 180, 20);
+        this.add(lcp);
+        lz = new JLabel("Zona");
+        lz.setBounds(710, 180, 180, 20);
+        this.add(lz);
+        ldl = new JLabel("Delegación");
+        ldl.setBounds(790, 180, 180, 20);
+        this.add(ldl);
+        ltf = new JLabel("Tel. fijo");
+        ltf.setBounds(120, 220, 180, 20);
+        this.add(ltf);
+        ltm = new JLabel("Tel. móvil");
+        ltm.setBounds(390, 220, 180, 20);
+        this.add(ltm);
+        ltim = new JLabel("Tiempo");
+        ltim.setBounds(960, 220, 180, 20);
+        this.add(ltim);
         fecnac = new JLabel("Fecha de nacimiento: ");
         fecnac.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         fecnac.setBounds(10, 200, 180, 20);
@@ -137,7 +191,7 @@ public class frame extends JFrame{
         s2.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         s2.setBounds(280, 199, 30, 20);
         this.add(s2);
-        aaP = new JTextField("aa", 1);
+        aaP = new JTextField("aaaa", 1);
         aaP.setBounds(295, 200, 30, 20);
         this.add(aaP);
         direccion = new JLabel("Direccion: ");
@@ -179,7 +233,7 @@ public class frame extends JFrame{
         telMovil = new JTextField("Teléfono móvil", 3);
         telMovil.setBounds(360, 240, 140, 20);
         this.add(telMovil);
-        tiempo = new JLabel("¿Cuánto tiempo lleva viviendo en este domicilio?");
+        tiempo = new JLabel("¿Cuántos años lleva viviendo en este domicilio?");
         tiempo.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         tiempo.setBounds(520, 240, 480, 20);
         this.add(tiempo);

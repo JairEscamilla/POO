@@ -27,7 +27,7 @@ public class Paciente{
     public String toString(){
         String msj = nomPac + " " + apPatPac + " " + apMatPac;
         msj = msj + "\nTelefono fijo: "+telFijo + "\nTelefono movil: " + telMovil + "\nSexo: " + sexo + "\nEstudios: " + estudios + "\n¿Sabe leer? " +  leer + "\n¿Sabe escribir? " + escribir + "\nOcupacion: " + ocupacion + "\nEdad: " + edad;
-        msj = msj + "\n Fecha de consulta: " + dd + "/" + mm + "/" + aa + "\n";
+        msj = msj + "\nFecha de consulta: " + dd + "/" + mm + "/" + aa + "\n";
         msj = msj + "\n-----------------------------------------------";
         return msj;
     }

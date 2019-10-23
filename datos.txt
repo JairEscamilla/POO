@@ -1,24 +1,72 @@
-asd Escamilla Hernandez
-Telefono fijo: 55
-Telefono movil: 55
+sad sd asd
+Telefono fijo: 557066
+Telefono movil: 2273147
 Sexo: 0
-Estudios: 0
-¿Sabe leer? 0
+Estudios: 14
+¿Sabe leer? 1
 ¿Sabe escribir? 0
-Ocupacion: 3
-Edad: 79
-Fecha de consulta: 21/9/2019
+Ocupacion: 5
+Edad: 2010
+ Fecha de consulta: 22/9/2019
 
 -----------------------------------------------
-asd Escamilla Hernandez
-Telefono fijo: 55
-Telefono movil: 55
+sad sd asd
+Telefono fijo: 557066
+Telefono movil: 2273147
 Sexo: 0
-Estudios: 0
+Estudios: 14
+¿Sabe leer? 1
+¿Sabe escribir? 0
+Ocupacion: 5
+Edad: 2010
+ Fecha de consulta: 22/9/2019
+
+-----------------------------------------------
+sad sd asd
+Telefono fijo: 557066
+Telefono movil: 2273147
+Sexo: 0
+Estudios: 14
+¿Sabe leer? 1
+¿Sabe escribir? 0
+Ocupacion: 5
+Edad: 2010
+ Fecha de consulta: 22/9/2019
+
+-----------------------------------------------
+sad sd ESCAMILLA
+Telefono fijo: 557066
+Telefono movil: 2273147
+Sexo: 0
+Estudios: 14
+¿Sabe leer? 1
+¿Sabe escribir? 0
+Ocupacion: 5
+Edad: 2010
+ Fecha de consulta: 22/9/2019
+
+-----------------------------------------------
+sad sd ESCAMILLA
+Telefono fijo: 557066
+Telefono movil: 2273147
+Sexo: 0
+Estudios: 14
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
-Ocupacion: 3
-Edad: 79
-Fecha de consulta: 21/9/2019
+Ocupacion: 4
+Edad: 2010
+ Fecha de consulta: 22/9/2019
+
+-----------------------------------------------
+JAIR ALLAN ESCAMILLA
+Telefono fijo: 557066
+Telefono movil: 2273147
+Sexo: 0
+Estudios: 14
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 4
+Edad: 2010
+ Fecha de consulta: 22/9/2019
 
 -----------------------------------------------
