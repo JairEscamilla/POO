@@ -122,7 +122,7 @@ public class frame extends JFrame{
         sexo.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         sexo.setBounds(640, 160, 130, 20);
         this.add(sexo);
-        r1 = new JRadioButton("Hombre");
+        r1 = new JRadioButton("Hombre", true);
         r2 = new JRadioButton("Mujer");
         ButtonGroup g1 = new ButtonGroup();
         g1.add(r1);
@@ -257,7 +257,7 @@ public class frame extends JFrame{
         est.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         est.setBounds(10, 320, 130, 20);
         this.add(est);
-        casado = new JRadioButton("Casado");
+        casado = new JRadioButton("Casado", true);
         ulibre = new JRadioButton("Unión libre");
         soltero = new JRadioButton("Soltero");
         separado = new JRadioButton("Separado");
@@ -298,7 +298,7 @@ public class frame extends JFrame{
         ne.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         ne.setBounds(10, 400, 300, 20);
         this.add(ne);
-        noEst = new JRadioButton("0");
+        noEst = new JRadioButton("0", true);
         noEst.setBounds(120, 400, 50, 20);
         this.add(noEst);
         g1.add(noEst);
@@ -361,7 +361,7 @@ public class frame extends JFrame{
         leer.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         leer.setBounds(500, 480, 100, 20);
         this.add(leer);
-        ly = new JRadioButton("Si");
+        ly = new JRadioButton("Si", true);
         ln = new JRadioButton("No");
         g1.add(ly);
         g1.add(ln);
@@ -373,7 +373,7 @@ public class frame extends JFrame{
         escribir.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         escribir.setBounds(720, 480, 200, 20);
         this.add(escribir);
-        ey = new JRadioButton("Si");
+        ey = new JRadioButton("Si", true);
         en = new JRadioButton("No");
         g2.add(ey);
         g2.add(en);
@@ -389,7 +389,11 @@ public class frame extends JFrame{
         oc.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         oc.setBounds(10, 520, 300, 20);
         this.add(oc);
-        for(int i = 0; i < 6; i++){
+        ocupacion[0] = new  JRadioButton(titles[0], true);
+        ocupacion[0].setBounds(180, 520, 150, 20);
+        g1.add(ocupacion[0]);
+        this.add(ocupacion[0]);
+        for(int i = 1; i < 6; i++){
             ocupacion[i] = new  JRadioButton(titles[i]);
             ocupacion[i].setBounds(180+i*150, 520, 150, 20);
             g1.add(ocupacion[i]);
@@ -403,6 +407,10 @@ public class frame extends JFrame{
         lbl.setFont(new java.awt.Font("Umpush Regular", 1, 15));
         lbl.setBounds(10, 560, 100, 20);
         this.add(lbl);
+        rels[0] = new  JRadioButton(religiones[0], true);
+        rels[0].setBounds(100, 560, 150, 20);
+        g1.add(rels[0]);
+        this.add(rels[0]);
         for(int i = 0; i < 4; i++){
             rels[i] = new  JRadioButton(religiones[i]);
             rels[i].setBounds(100+i*150, 560, 150, 20);
