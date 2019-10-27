@@ -1,0 +1,1 @@
+ export CLASSPATH=$CLASSPATH:/home/jair/Music/mysql-connector-5.1.18.jar
