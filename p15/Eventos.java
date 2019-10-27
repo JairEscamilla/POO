@@ -3,6 +3,9 @@ import java.awt.event.ActionListener;
 import java.io.PrintWriter;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
+
+import bd.Conectar;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -10,6 +13,7 @@ import java.util.GregorianCalendar;
 public class Eventos implements ActionListener{
     public ArrayList<Paciente> lista = new ArrayList<>();
     PrintWriter pw;
+    Conexion con = new Conexion();
     public void actionPerformed(ActionEvent action){
         if(action.getSource() == frame.registro){
             System.out.print("\033[H\033[2J");  
@@ -132,7 +136,11 @@ public class Eventos implements ActionListener{
                 }
                 if(!e){
                     pw = new PrintWriter("datos.txt");
-                    lista.add(new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha));
+                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha);
+                    
+                    con.getConnection();
+                    con.InsertarRegistros(pac);
+                    lista.add(pac);
                     for(Paciente iterador: lista){
                         //System.out.println(iterador);
                         pw.println(iterador.toString());

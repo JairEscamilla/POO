@@ -1,72 +1,48 @@
-sad sd asd
-Telefono fijo: 557066
-Telefono movil: 2273147
+qwe qweno qweq
+Telefono fijo: 55
+Telefono movil: 55
 Sexo: 0
-Estudios: 14
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 5
-Edad: 2010
- Fecha de consulta: 22/9/2019
-
------------------------------------------------
-sad sd asd
-Telefono fijo: 557066
-Telefono movil: 2273147
-Sexo: 0
-Estudios: 14
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 5
-Edad: 2010
- Fecha de consulta: 22/9/2019
-
------------------------------------------------
-sad sd asd
-Telefono fijo: 557066
-Telefono movil: 2273147
-Sexo: 0
-Estudios: 14
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 5
-Edad: 2010
- Fecha de consulta: 22/9/2019
-
------------------------------------------------
-sad sd ESCAMILLA
-Telefono fijo: 557066
-Telefono movil: 2273147
-Sexo: 0
-Estudios: 14
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 5
-Edad: 2010
- Fecha de consulta: 22/9/2019
-
------------------------------------------------
-sad sd ESCAMILLA
-Telefono fijo: 557066
-Telefono movil: 2273147
-Sexo: 0
-Estudios: 14
+Estudios: 0
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
-Ocupacion: 4
-Edad: 2010
- Fecha de consulta: 22/9/2019
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 26/9/2019
 
 -----------------------------------------------
-JAIR ALLAN ESCAMILLA
-Telefono fijo: 557066
-Telefono movil: 2273147
+qwe qweno qweq
+Telefono fijo: 55
+Telefono movil: 55
 Sexo: 0
-Estudios: 14
+Estudios: 0
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
-Ocupacion: 4
-Edad: 2010
- Fecha de consulta: 22/9/2019
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 26/9/2019
+
+-----------------------------------------------
+Allan Escamilla Hernandez
+Telefono fijo: 55
+Telefono movil: 55
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 26/9/2019
+
+-----------------------------------------------
+Allan Escamilla Hernandez
+Telefono fijo: 55
+Telefono movil: 55
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 26/9/2019
 
 -----------------------------------------------
