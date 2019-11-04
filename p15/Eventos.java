@@ -55,7 +55,6 @@ public class Eventos implements ActionListener{
                 telFijo = Integer.parseInt(frame.telFijo.getText().toString());
                 telMovil = Integer.parseInt(frame.telMovil.getText().toString());
                 time = Integer.parseInt(frame.time.getText().toString());
-                System.out.println("TIME: " + time);
                 estadoPac = frame.estadoPac.getText().toString();
                 errores[7] = validaCaracteres(estadoPac);
                 if(frame.r1.isSelected())
@@ -81,27 +80,27 @@ public class Eventos implements ActionListener{
                 counter++;
                 for(int i = 0; i < 6; i++){
                     if(frame.primaria[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 3; i++){
                     if(frame.primaria[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 3; i++){
                     if(frame.prepa[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 6; i++){
                     if(frame.licenciatura[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 6; i++){
                     if(frame.postgrado[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 if(frame.ly.isSelected())
@@ -109,9 +108,9 @@ public class Eventos implements ActionListener{
                 if(frame.ln.isSelected())
                     leer = 1;
                 if(frame.ey.isSelected())
-                    leer = 0;
+                    escribir = 0;
                 if(frame.en.isSelected())
-                    leer = 1;
+                    escribir = 1;
                 for(int i = 0; i < 6; i++){
                     if(frame.ocupacion[i].isSelected())
                         ocupacion = counter2;
@@ -126,7 +125,6 @@ public class Eventos implements ActionListener{
                 for(int i = 0; i < errores.length; i++){
                     if(errores[i])
                         e = true;
-                    System.out.println("Errores: " + errores[i]);
                 }
                 if((year - aaP) < 60){
                     JOptionPane.showMessageDialog(null, "Debes tener al menos 60 años", "REGISTRO", JOptionPane.INFORMATION_MESSAGE);

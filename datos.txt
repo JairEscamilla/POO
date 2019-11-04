@@ -1,35 +1,155 @@
-d d d
-Telefono fijo: 12312
+qwe qwe e
+Telefono fijo: 234
 Telefono movil: 123
 Sexo: 0
-Estudios: 4
-¿Sabe leer? 1
+Estudios: 0
+¿Sabe leer? 0
 ¿Sabe escribir? 0
-Ocupacion: 4
+Ocupacion: 0
 Edad: 69
 Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
-d d d
-Telefono fijo: 12312
+qwe qwe e
+Telefono fijo: 234
 Telefono movil: 123
 Sexo: 0
-Estudios: 4
-¿Sabe leer? 1
+Estudios: 0
+¿Sabe leer? 0
 ¿Sabe escribir? 0
-Ocupacion: 4
+Ocupacion: 0
 Edad: 69
 Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
-d d d
-Telefono fijo: 12312
+qwe qwe e
+Telefono fijo: 234
 Telefono movil: 123
 Sexo: 0
-Estudios: 4
-¿Sabe leer? 1
+Estudios: 0
+¿Sabe leer? 0
 ¿Sabe escribir? 0
-Ocupacion: 5
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
 Edad: 69
 Fecha de consulta: 3/10/2019
 

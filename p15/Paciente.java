@@ -12,6 +12,7 @@ public class Paciente{
         this.apPat = apPatDoc;
         this.nom = nomDoc;
         this.nomPac = nomPac;
+        this.religion = religion;
         this.apPatPac = apPatPac;
         this.apMatPac = apMatPac;
         this.telFijo = telFijo;
