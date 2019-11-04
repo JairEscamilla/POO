@@ -30,8 +30,8 @@ public class Conexion{
     
     public void InsertarRegistros(Paciente pac) throws SQLException {
        java.sql.Statement s = (Statement) conn.createStatement();
-        s.executeUpdate("INSERT INTO registros(nombre, apellidoP, apellidoM, edad, dia, mes, anio, sexo) VALUES('"
-                + pac.nomPac + "', '" + pac.apPatPac + "', '" + pac.apMatPac + "', '" + pac.edad + "', '" + pac.dd + "', '" + pac.mm + "', '" + pac.aa + "', '" + pac.sexo + "')");
+        s.executeUpdate("INSERT INTO Pacientes(Id_Paciente, APaterno, AMaterno, Nombre, sexo, Fecnac, Tiempo, EstadoFederativo, EstadoCivil, Estudios, Leer, Escribir, ocupacion, religion) VALUES(null, '"
+                + pac.apPatPac + "', '" + pac.apMatPac + "', '" + pac.nomPac + "', '" + pac.sexo + "', '" + pac.aaP + "-" + pac.mmP + "-" + pac.ddP + "', '" + pac.tiempo + "', '" + pac.estadoPac + "', '" + pac.estadoCivil + "', '"+ pac.estudios + "', '" + pac.leer + "', '" + pac.escribir + "', '" + pac.ocupacion + "', '" + pac.religion + "')");
     }
 
 

@@ -5,9 +5,12 @@ import java.util.Calendar;
 import javax.xml.catalog.CatalogFeatures.Feature;
 
 public class Paciente{
-    String apMat, apPat, nom, apPatPac, apMatPac, nomPac, calle, delegacion, estadoPac;
-    int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo, estadoCivil, estudios, counter = 0, leer, escribir, ocupacion, counter2 = 0, religion, counter3 = 0;
-    public Paciente(String nomPac, String apPatPac, String apMatPac, int telFijo, int telMovil, int sexo, int estadoCivil, int estudios, int leer, int escribir, int ocupacion, int edad, Calendar fecha){
+    String apMat, apPat, nom, apPatPac, apMatPac, nomPac, calle, delegacion, estadoPac;  
+    int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo, estadoCivil, estudios, counter = 0, leer, escribir, ocupacion, counter2 = 0, religion, counter3 = 0, tiempo = 0;
+    public Paciente(String nomPac, String apPatPac, String apMatPac, int telFijo, int telMovil, int sexo, int estadoCivil, int estudios, int leer, int escribir, int ocupacion, int edad, Calendar fecha, String nomDoc, String ApMatDoc, String apPatDoc, int tiempo, String estadoFederativo, int religion, int ddP, int mmP, int aaP){
+        this.apMat = ApMatDoc;
+        this.apPat = apPatDoc;
+        this.nom = nomDoc;
         this.nomPac = nomPac;
         this.apPatPac = apPatPac;
         this.apMatPac = apMatPac;
@@ -23,6 +26,11 @@ public class Paciente{
         this.dd = fecha.get(Calendar.DAY_OF_MONTH);
         this.mm = fecha.get(Calendar.MONTH);
         this.aa = fecha.get(Calendar.YEAR);
+        this.aaP = aaP;
+        this.mmP = mmP;
+        this.ddP = ddP;
+        this.tiempo = tiempo;
+        this.estadoPac = estadoFederativo;
     }
     public String toString(){
         String msj = nomPac + " " + apPatPac + " " + apMatPac;

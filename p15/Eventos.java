@@ -24,7 +24,7 @@ public class Eventos implements ActionListener{
                 boolean errores[] = new boolean[8];
                 String validaciones[] = {"Ha ingresado mal el apellido materno del médico", "Ha ingresado mal el apellido paterno del médico", "Ha ingresado mal el nombre del médico", "Ha ingresado mal el apellido materno del paciente", "Ha ingresado mal el apellido paterno del paciente", "Ha ingresado mal el nombre del paciente", "Ha ingresado mal la delegacion del paciente", "Ha ingresado mal el estado del paciente"};
                 String apMat, apPat, nom, apPatPac, apMatPac, nomPac, calle, delegacion, estadoPac;
-                int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo = 0, estadoCivil = 0, estudios = 0, counter = 0, leer = 0, escribir = 0, ocupacion = 0, counter2 = 0, religion, counter3 = 0;
+                int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo = 0, estadoCivil = 0, estudios = 0, counter = 0, leer = 0, escribir = 0, ocupacion = 0, counter2 = 0, religion = 0, counter3 = 0;
                 apMat = frame.apMat.getText().toString();
                 apPat = frame.apPat.getText().toString();
                 nom = frame.nomMedico.getText().toString();
@@ -55,6 +55,7 @@ public class Eventos implements ActionListener{
                 telFijo = Integer.parseInt(frame.telFijo.getText().toString());
                 telMovil = Integer.parseInt(frame.telMovil.getText().toString());
                 time = Integer.parseInt(frame.time.getText().toString());
+                System.out.println("TIME: " + time);
                 estadoPac = frame.estadoPac.getText().toString();
                 errores[7] = validaCaracteres(estadoPac);
                 if(frame.r1.isSelected())
@@ -136,8 +137,7 @@ public class Eventos implements ActionListener{
                 }
                 if(!e){
                     pw = new PrintWriter("datos.txt");
-                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha);
-                    
+                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha, nom, apMat, apPat, time, estadoPac, religion, ddP, mmP, aaP);
                     con.getConnection();
                     con.InsertarRegistros(pac);
                     lista.add(pac);
@@ -162,7 +162,6 @@ public class Eventos implements ActionListener{
         for(int i = 0; i < cadena.length(); i++){
             if(((int)cadena.charAt(i) >= 65 && (int)cadena.charAt(i) <= 90) || ((int)cadena.charAt(i) >= 97 && (int)cadena.charAt(i) <= 122)){
                 error = false;
-                System.out.println("entrando");
             }
             else{
                 error =  true;

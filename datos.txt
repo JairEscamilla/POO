@@ -1,48 +1,36 @@
-qwe qweno qweq
-Telefono fijo: 55
-Telefono movil: 55
+d d d
+Telefono fijo: 12312
+Telefono movil: 123
 Sexo: 0
-Estudios: 0
-¿Sabe leer? 0
+Estudios: 4
+¿Sabe leer? 1
 ¿Sabe escribir? 0
-Ocupacion: 0
+Ocupacion: 4
 Edad: 69
-Fecha de consulta: 26/9/2019
+Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
-qwe qweno qweq
-Telefono fijo: 55
-Telefono movil: 55
+d d d
+Telefono fijo: 12312
+Telefono movil: 123
 Sexo: 0
-Estudios: 0
-¿Sabe leer? 0
+Estudios: 4
+¿Sabe leer? 1
 ¿Sabe escribir? 0
-Ocupacion: 0
+Ocupacion: 4
 Edad: 69
-Fecha de consulta: 26/9/2019
+Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 55
-Telefono movil: 55
+d d d
+Telefono fijo: 12312
+Telefono movil: 123
 Sexo: 0
-Estudios: 0
-¿Sabe leer? 0
+Estudios: 4
+¿Sabe leer? 1
 ¿Sabe escribir? 0
-Ocupacion: 0
+Ocupacion: 5
 Edad: 69
-Fecha de consulta: 26/9/2019
-
------------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 55
-Telefono movil: 55
-Sexo: 0
-Estudios: 0
-¿Sabe leer? 0
-¿Sabe escribir? 0
-Ocupacion: 0
-Edad: 69
-Fecha de consulta: 26/9/2019
+Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
