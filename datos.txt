@@ -1,48 +1,156 @@
-qwe qweno qweq
-Telefono fijo: 55
-Telefono movil: 55
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
 Sexo: 0
 Estudios: 0
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
 Ocupacion: 0
 Edad: 69
-Fecha de consulta: 26/9/2019
+Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
-qwe qweno qweq
-Telefono fijo: 55
-Telefono movil: 55
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
 Sexo: 0
 Estudios: 0
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
 Ocupacion: 0
 Edad: 69
-Fecha de consulta: 26/9/2019
+Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 55
-Telefono movil: 55
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
 Sexo: 0
 Estudios: 0
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
 Ocupacion: 0
 Edad: 69
-Fecha de consulta: 26/9/2019
+Fecha de consulta: 3/10/2019
 
 -----------------------------------------------
-Allan Escamilla Hernandez
-Telefono fijo: 55
-Telefono movil: 55
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
 Sexo: 0
 Estudios: 0
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
 Ocupacion: 0
 Edad: 69
-Fecha de consulta: 26/9/2019
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+qwe qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
+
+-----------------------------------------------
+jair qwe e
+Telefono fijo: 234
+Telefono movil: 123
+Sexo: 0
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
+Edad: 69
+Fecha de consulta: 3/10/2019
 
 -----------------------------------------------

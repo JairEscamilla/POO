@@ -24,7 +24,7 @@ public class Eventos implements ActionListener{
                 boolean errores[] = new boolean[8];
                 String validaciones[] = {"Ha ingresado mal el apellido materno del médico", "Ha ingresado mal el apellido paterno del médico", "Ha ingresado mal el nombre del médico", "Ha ingresado mal el apellido materno del paciente", "Ha ingresado mal el apellido paterno del paciente", "Ha ingresado mal el nombre del paciente", "Ha ingresado mal la delegacion del paciente", "Ha ingresado mal el estado del paciente"};
                 String apMat, apPat, nom, apPatPac, apMatPac, nomPac, calle, delegacion, estadoPac;
-                int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo = 0, estadoCivil = 0, estudios = 0, counter = 0, leer = 0, escribir = 0, ocupacion = 0, counter2 = 0, religion, counter3 = 0;
+                int dd, mm, aa, edad, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo = 0, estadoCivil = 0, estudios = 0, counter = 0, leer = 0, escribir = 0, ocupacion = 0, counter2 = 0, religion = 0, counter3 = 0;
                 apMat = frame.apMat.getText().toString();
                 apPat = frame.apPat.getText().toString();
                 nom = frame.nomMedico.getText().toString();
@@ -80,27 +80,27 @@ public class Eventos implements ActionListener{
                 counter++;
                 for(int i = 0; i < 6; i++){
                     if(frame.primaria[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 3; i++){
                     if(frame.primaria[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 3; i++){
                     if(frame.prepa[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 6; i++){
                     if(frame.licenciatura[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 6; i++){
                     if(frame.postgrado[i].isSelected())
-                        estudios = counter;
+                        System.out.println("Hereeeeee");//estudios = counter;
                     counter++;
                 }
                 if(frame.ly.isSelected())
@@ -108,9 +108,9 @@ public class Eventos implements ActionListener{
                 if(frame.ln.isSelected())
                     leer = 1;
                 if(frame.ey.isSelected())
-                    leer = 0;
+                    escribir = 0;
                 if(frame.en.isSelected())
-                    leer = 1;
+                    escribir = 1;
                 for(int i = 0; i < 6; i++){
                     if(frame.ocupacion[i].isSelected())
                         ocupacion = counter2;
@@ -125,7 +125,6 @@ public class Eventos implements ActionListener{
                 for(int i = 0; i < errores.length; i++){
                     if(errores[i])
                         e = true;
-                    System.out.println("Errores: " + errores[i]);
                 }
                 if((year - aaP) < 60){
                     JOptionPane.showMessageDialog(null, "Debes tener al menos 60 años", "REGISTRO", JOptionPane.INFORMATION_MESSAGE);
@@ -136,8 +135,7 @@ public class Eventos implements ActionListener{
                 }
                 if(!e){
                     pw = new PrintWriter("datos.txt");
-                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha);
-                    
+                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha, nom, apMat, apPat, time, estadoPac, religion, ddP, mmP, aaP);
                     con.getConnection();
                     con.InsertarRegistros(pac);
                     lista.add(pac);
@@ -162,7 +160,6 @@ public class Eventos implements ActionListener{
         for(int i = 0; i < cadena.length(); i++){
             if(((int)cadena.charAt(i) >= 65 && (int)cadena.charAt(i) <= 90) || ((int)cadena.charAt(i) >= 97 && (int)cadena.charAt(i) <= 122)){
                 error = false;
-                System.out.println("entrando");
             }
             else{
                 error =  true;
