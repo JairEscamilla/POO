@@ -80,27 +80,27 @@ public class Eventos implements ActionListener{
                 counter++;
                 for(int i = 0; i < 6; i++){
                     if(frame.primaria[i].isSelected())
-                        System.out.println("Hereeeeee");//estudios = counter;
+                        estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 3; i++){
-                    if(frame.primaria[i].isSelected())
-                        System.out.println("Hereeeeee");//estudios = counter;
+                    if(frame.secundaria[i].isSelected())
+                        estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 3; i++){
                     if(frame.prepa[i].isSelected())
-                        System.out.println("Hereeeeee");//estudios = counter;
+                        estudios = counter;
                     counter++;
                 }
                 for(int i = 0; i < 6; i++){
                     if(frame.licenciatura[i].isSelected())
-                        System.out.println("Hereeeeee");//estudios = counter;
+                        estudios = counter;
                     counter++;
                 }
-                for(int i = 0; i < 6; i++){
+                for(int i = 0; i < 7; i++){
                     if(frame.postgrado[i].isSelected())
-                        System.out.println("Hereeeeee");//estudios = counter;
+                        estudios = counter;
                     counter++;
                 }
                 if(frame.ly.isSelected())
