@@ -31,6 +31,8 @@ public class Conexion{
     public void InsertarRegistros(Paciente pac) throws SQLException {
        java.sql.Statement s = (Statement) conn.createStatement();
        java.sql.Statement s2 = (Statement) conn.createStatement();
+       java.sql.Statement s3 = (Statement) conn.createStatement();
+       s3.executeUpdate("INSERT INTO Direcciones(Id_direccion, Calle, NumExt, NumInt, CP, Zona, Delegacion, Id_paciente) VALUES (null, '" + pac.calle +  "', '" + pac.numEx + "', '"+ pac.numInt +"', '"+ pac.cp +"', '"+ pac.zona + "', '"+ pac.delegacion + "', 1)");
        s2.executeUpdate("INSERT INTO Medicos(Id_medico, Nombre, Apaterno, Amaterno, id_paciente) VALUES (null, '"+ pac.nom + "', '"+ pac.apPat + "', '" + pac.apMat +"', 1)");
         s.executeUpdate("INSERT INTO Pacientes(Id_Paciente, APaterno, AMaterno, Nombre, sexo, Fecnac, Tiempo, EstadoFederativo, EstadoCivil, Estudios, Leer, Escribir, ocupacion, religion, age, cp) VALUES(null, '"
                 + pac.apPatPac + "', '" + pac.apMatPac + "', '" + pac.nomPac + "', '" + pac.sexo + "', '" + pac.aaP + "-" + pac.mmP + "-" + pac.ddP + "', '" + pac.tiempo + "', '" + pac.estadoPac + "', '" + pac.estadoCivil + "', '"+ pac.estudios + "', '" + pac.leer + "', '" + pac.escribir + "', '" + pac.ocupacion + "', '" + pac.religion + "', '" + pac.edad + "', '" + pac.cp + "')");

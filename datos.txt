@@ -1,6 +1,6 @@
-qwe ew qwe
-Telefono fijo: 7777
-Telefono movil: 777
+qwe qwe qwe
+Telefono fijo: 2323432
+Telefono movil: 234234
 Sexo: 0
 Estudios: 0
 ¿Sabe leer? 0
