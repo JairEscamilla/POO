@@ -1,24 +1,12 @@
-q qwe qwe
-Telefono fijo: 55706650
-Telefono movil: 2273147
-Sexo: 0
-Estudios: 15
+qwe qwe qwe
+Telefono fijo: 1234567
+Telefono movil: 123234
+Sexo: 1
+Estudios: 5
 ¿Sabe leer? 1
-¿Sabe escribir? 0
+¿Sabe escribir? 1
 Ocupacion: 3
-Edad: 79
-Fecha de consulta: 5/10/2019
-
------------------------------------------------
-q qwe qwe
-Telefono fijo: 55706650
-Telefono movil: 2273147
-Sexo: 0
-Estudios: 15
-¿Sabe leer? 1
-¿Sabe escribir? 0
-Ocupacion: 3
-Edad: 79
+Edad: 69
 Fecha de consulta: 5/10/2019
 
 -----------------------------------------------

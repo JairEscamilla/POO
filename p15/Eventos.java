@@ -135,7 +135,7 @@ public class Eventos implements ActionListener{
                 }
                 if(!e){
                     pw = new PrintWriter("datos.txt");
-                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha, nom, apMat, apPat, time, estadoPac, religion, ddP, mmP, aaP);
+                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha, nom, apMat, apPat, time, estadoPac, religion, ddP, mmP, aaP, year - aaP);
                     con.getConnection();
                     con.InsertarRegistros(pac);
                     lista.add(pac);
