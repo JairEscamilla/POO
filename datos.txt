@@ -1,7 +1,7 @@
-qew qqwe qwe
-Telefono fijo: 5545251
-Telefono movil: 5526425
-Sexo: 1
+qwe ew qwe
+Telefono fijo: 7777
+Telefono movil: 777
+Sexo: 0
 Estudios: 0
 ¿Sabe leer? 0
 ¿Sabe escribir? 0
