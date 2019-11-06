@@ -50,6 +50,10 @@ public class Eventos implements ActionListener{
                 numInt = Integer.parseInt(frame.numInt.getText().toString());
                 zona = Integer.parseInt(frame.zona.getText().toString());
                 cp = Integer.parseInt(frame.cp.getText().toString());
+                if(frame.cp.getText().toString().length() != 5){
+                    JOptionPane.showMessageDialog(null, "El código postal debe contener 5 digitos", "ERROR", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
                 delegacion = frame.delegacion.getText().toString();
                 errores[6] = validaCaracteres(delegacion);
                 telFijo = Integer.parseInt(frame.telFijo.getText().toString());
@@ -135,7 +139,7 @@ public class Eventos implements ActionListener{
                 }
                 if(!e){
                     pw = new PrintWriter("datos.txt");
-                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha, nom, apMat, apPat, time, estadoPac, religion, ddP, mmP, aaP, year - aaP);
+                    Paciente pac = new Paciente(nomPac, apPatPac, apMatPac, telFijo, telMovil, sexo, estadoCivil, estudios, leer, escribir, ocupacion, year - aaP, fecha, nom, apMat, apPat, time, estadoPac, religion, ddP, mmP, aaP, year - aaP, cp);
                     con.getConnection();
                     con.InsertarRegistros(pac);
                     lista.add(pac);

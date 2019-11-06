@@ -7,8 +7,9 @@ import javax.xml.catalog.CatalogFeatures.Feature;
 public class Paciente{
     String apMat, apPat, nom, apPatPac, apMatPac, nomPac, calle, delegacion, estadoPac;  
     int dd, mm, aa, ddP, mmP, aaP, numEx, numInt, cp, zona, telFijo, telMovil, time, sexo, estadoCivil, estudios, counter = 0, leer, escribir, ocupacion, counter2 = 0, religion, counter3 = 0, tiempo = 0, edad = 0;
-    public Paciente(String nomPac, String apPatPac, String apMatPac, int telFijo, int telMovil, int sexo, int estadoCivil, int estudios, int leer, int escribir, int ocupacion, int x, Calendar fecha, String nomDoc, String ApMatDoc, String apPatDoc, int tiempo, String estadoFederativo, int religion, int ddP, int mmP, int aaP, int edad){
+    public Paciente(String nomPac, String apPatPac, String apMatPac, int telFijo, int telMovil, int sexo, int estadoCivil, int estudios, int leer, int escribir, int ocupacion, int x, Calendar fecha, String nomDoc, String ApMatDoc, String apPatDoc, int tiempo, String estadoFederativo, int religion, int ddP, int mmP, int aaP, int edad, int cp){
         this.apMat = ApMatDoc;
+        this.cp = cp;
         this.apPat = apPatDoc;
         this.nom = nomDoc;
         this.nomPac = nomPac;

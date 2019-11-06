@@ -1,11 +1,11 @@
-qwe qwe qwe
-Telefono fijo: 1234567
-Telefono movil: 123234
+qew qqwe qwe
+Telefono fijo: 5545251
+Telefono movil: 5526425
 Sexo: 1
-Estudios: 5
-¿Sabe leer? 1
-¿Sabe escribir? 1
-Ocupacion: 3
+Estudios: 0
+¿Sabe leer? 0
+¿Sabe escribir? 0
+Ocupacion: 0
 Edad: 69
 Fecha de consulta: 5/10/2019
 
