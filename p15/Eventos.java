@@ -45,6 +45,10 @@ public class Eventos implements ActionListener{
                 ddP = Integer.parseInt(frame.ddP.getText().toString());
                 mmP = Integer.parseInt(frame.mmP.getText().toString());
                 aaP = Integer.parseInt(frame.aaP.getText().toString());
+                if((ddP <= 0 || ddP >= 30) || (mmP <= 0 || mmP > 12) || aaP < 1900){
+                    JOptionPane.showMessageDialog(null, "Debes ingresar una fecha valida y un año mayor a 1900", "ERROR", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
                 calle = frame.calle.getText().toString();
                 numEx = Integer.parseInt(frame.numEx.getText().toString());
                 numInt = Integer.parseInt(frame.numInt.getText().toString());
@@ -58,6 +62,10 @@ public class Eventos implements ActionListener{
                 errores[6] = validaCaracteres(delegacion);
                 telFijo = Integer.parseInt(frame.telFijo.getText().toString());
                 telMovil = Integer.parseInt(frame.telMovil.getText().toString());
+                if(frame.telFijo.getText().toString().length() != 8 || frame.telMovil.getText().toString().length() != 8){
+                    JOptionPane.showMessageDialog(null, "Los numeros telefonicos deben de ser de 8 digitos", "ERROR", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
                 time = Integer.parseInt(frame.time.getText().toString());
                 estadoPac = frame.estadoPac.getText().toString();
                 errores[7] = validaCaracteres(estadoPac);
