@@ -34,8 +34,8 @@ public class Conexion{
        java.sql.Statement s3 = (Statement) conn.createStatement();
        java.sql.Statement s4 = (Statement) conn.createStatement();
        int idPaciente = 0;
-       s.executeUpdate("INSERT INTO Pacientes(Id_Paciente, APaterno, AMaterno, Nombre, sexo, Fecnac, Tiempo, EstadoFederativo, EstadoCivil, Estudios, Leer, Escribir, ocupacion, religion, age, cp) VALUES(null, '"
-       + pac.apPatPac + "', '" + pac.apMatPac + "', '" + pac.nomPac + "', '" + pac.sexo + "', '" + pac.aaP + "-" + pac.mmP + "-" + pac.ddP + "', '" + pac.tiempo + "', '" + pac.estadoPac + "', '" + pac.estadoCivil + "', '"+ pac.estudios + "', '" + pac.leer + "', '" + pac.escribir + "', '" + pac.ocupacion + "', '" + pac.religion + "', '" + pac.edad + "', '" + pac.cp + "')");
+       s.executeUpdate("INSERT INTO Pacientes(Id_Paciente, APaterno, AMaterno, Nombre, sexo, Fecnac, Tiempo, EstadoFederativo, EstadoCivil, Estudios, Leer, Escribir, ocupacion, religion, age, cp, telFijo, telMovil) VALUES(null, '"
+       + pac.apPatPac + "', '" + pac.apMatPac + "', '" + pac.nomPac + "', '" + pac.sexo + "', '" + pac.aaP + "-" + pac.mmP + "-" + pac.ddP + "', '" + pac.tiempo + "', '" + pac.estadoPac + "', '" + pac.estadoCivil + "', '"+ pac.estudios + "', '" + pac.leer + "', '" + pac.escribir + "', '" + pac.ocupacion + "', '" + pac.religion + "', '" + pac.edad + "', '" + pac.cp + "', '"+ pac.telFijo +"', '"+ pac.telMovil +"')");
        ResultSet rs = s.executeQuery("SELECT id_Paciente FROM Pacientes ORDER BY id_Paciente desc limit 1"); 
        if(rs.next())
        idPaciente = rs.getInt("id_Paciente");
